@@ -9,7 +9,7 @@ const app = express();
 
 // middleware de uso do json no express
 app.use(cors({
-  origin: 'https://feedget-nlw-return-lovat.vercel.app/',
+  origin: '*',
 }));
 app.use(bodyParser.json({ limit: '8mb' }))
 app.use(express.json());
