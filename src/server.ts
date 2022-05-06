@@ -18,6 +18,6 @@ app.use(routes)
 
 //Config da porta que o servidor vai ouvir
 
-app.listen(3333, () => {
+app.listen(process.env.PORT || 3333, () => {
   console.log('Http Server Runing...');
 });
